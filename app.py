@@ -58,8 +58,8 @@ def gfr(forgfr):
 
 def predict(values):
     if len(values) == 8:
-        model = joblib.load('./static/ckd.pkl')
-        scaler = joblib.load('./static/scaler.bin')
+        model = joblib.load('./model/ckd.pkl')
+        scaler = joblib.load('./model/scaler.bin')
        # print(model)
         values = np.asarray(values)
         #print(type(values))
